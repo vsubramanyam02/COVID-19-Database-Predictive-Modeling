@@ -7,23 +7,37 @@
 4. Imported Packages:
 
   numpy (1.23.5)
+  
   pandas (pandas 1.5.2)
+  
   matplotlib import pyplot (matplotlib 3.6.2)
+  
   sklearn import tree (sklearn 1.2.0)
+  
   sklearn.model_selection import train_test_split (sklearn 1.2.0)
+  
   sklearn.model_selection import cross_val_score (sklearn 1.2.0)
+  
   sklearn import svm (sklearn 1.2.0)
+  
   sklearn.svm import SVR (sklearn 1.2.0)
+  
   sklearn.ensemble import RandomForestClassifier (sklearn 1.2.0)
+  
   sklearn.ensemble import BaggingClassifier (sklearn 1.2.0)
+  
   sklearn.neighbors import KNeighborsClassifier (sklearn 1.2.0)
+  
   sklearn.datasets import make_blobs (sklearn 1.2.0)
   
 5. Detailed Description of Demo File:
 
   a. First begin by importing all necessary packages, including the Visualizer.py file that contains our custom class with all the data analysis functions.
+  
   b. Then run the cell containg our 2 custom functions outside of the Hospital class which are tree_depth_finder and forest_depth_finder functions. These functions serve to help the user determine the optimal complexity of the model where the test score is the highest without overfitting the model. 
+  
   c. The next part of the demo file serves to test these 2 functions on different data that is not the COVID hospital dataset. Here, we use the titanic.csv file as an example. 
+  
   d. Run the cell that splits the titanic data into train and test datasets and use our custom tree_depth_finder function to plot the train and test scores at different depth values. Here is the plot:  
   ![PNG image](https://user-images.githubusercontent.com/114379054/206581131-5cbc7dd7-24b6-4594-8410-73631d5e2274.jpeg)
  
@@ -35,6 +49,7 @@
   From this plot, we can see that overall the test scores remain relatively low despite changing the depth value. The training value seems to be relatively high no matter the depth value, which is a sign of overfitting.  This tells us that for this modeling problem, the DecisionTreeClassifier may be a better model than the RandomForest Classifier. 
   
   f. Next, we want to make an instance of our custom Hospital class from our imported COVID-19 hospital data. We can then test our length function by calling print(len(covid_data)). This tells us how many rows of data are in the COVID-19 hospital dataframe. 
+  
   g. Next we can test our summary function by calling covid.data_summary. This function takes in a list of column names that the user wants summary statsitics on as well as a groupby variable by which the summary statsitic will be grouped. In this case, the groupby variable is "states" and the summary statistics will be on the total_staffed_pediatric_icu_beds_7_day_coverage. 
   
   The resulting table gives the user the summary statistics (count, mean, std, min, 25th Quartile, 50th Quartile, 75th Quartile, and max) grouped by state for the total_staffed_pediatric_icu_beds_7_day_coverage. 
