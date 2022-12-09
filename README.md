@@ -71,4 +71,4 @@ From this graph, we can see the averages grouped by collection date and the aver
   
 8. Source of dataset: HealthData.gov
 
-https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital- Capa/uqq2-txqb/data (https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/uqq2-txqb/data)
+(https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/uqq2-txqb/data)
